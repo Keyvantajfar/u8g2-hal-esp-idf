@@ -26,7 +26,7 @@
 #define PIN_CS 15
 static char tag[] = "test_SSD1306";
 
-void task_test_SSD1306(void* ignore) {
+void app_main(void* ignore) {
   u8g2_esp32_hal_t u8g2_esp32_hal = U8G2_ESP32_HAL_DEFAULT;
   u8g2_esp32_hal.bus.spi.clk = PIN_CLK;
   u8g2_esp32_hal.bus.spi.mosi = PIN_MOSI;
